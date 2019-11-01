@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/signup" do
-    if params[:username].present? && params[:password].present? 
+    if params[:username].present? && params[:password].present?
       user = User.new(:username => params[:username], :password => params[:password])
       puts "\n\n\n\n\n\nparams"
       puts params
